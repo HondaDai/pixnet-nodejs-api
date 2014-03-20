@@ -1,0 +1,25 @@
+{
+  "name": "PixnetApi",
+  "version": "0.1.0",
+  "description": "Pixnet App Api",
+  "main": "index.js",
+  "dependencies": {
+    "request": "~2.34.0",
+    "querystring": "~0.2.0"
+  },
+  "devDependencies": {},
+  
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HondaDai/pixnet-nodejs-api"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "api",
+    "pixnet"
+  ],
+  "author": "HondaDai <hondadai.tw@gmail.com> (https://github.com/HondaDai)",
+  "license": "MIT"
+}
