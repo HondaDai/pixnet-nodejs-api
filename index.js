@@ -7,7 +7,7 @@ var PixnetApi = function(client_id) {
 
 }
 
-var dafault_callback = function (error, response, body ) {
+var default_callback = function (error, response, body ) {
   json = JSON.parse(body);
   console.log(json);
 }
@@ -20,7 +20,10 @@ PixnetApi.prototype.getAbsUrl = function(path, qs) {
 
 
 PixnetApi.prototype.getUseRate = function(cb) {
+  cb = cb || default_callback;
   R.get(this.getAbsUrl("index/rate"), cb);
 }
+
+
 
 module.exports = PixnetApi;
